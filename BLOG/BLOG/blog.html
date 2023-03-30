@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <title>CREATING-BLOG</title>
+  </head>
+  <body style="background-color: aliceblue">
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-danger fw-bold"
+                aria-current="page"
+                href="/"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger fw-bold" href="BLOG/blog.html"
+                >ADD PROJECT</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <a href="/CONTACT/contact.html"
+              style="background-color: orangered; border: none"
+              class="btn btn-outline-success text-light"
+              type="submit"
+            >
+              CONTACT
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar section -->
+
+    <div class="container">
+      <div style="width: 100%; box-sizing: border-box" class="form-input">
+        <form>
+          <div style="font-weight: bolder; margin: 20px 10px" class="section1">
+            <label class="judul" for="inputtext">PROJECTNAME</label>
+            <br />
+            <input
+              style="
+                width: 100%;
+                margin: auto;
+                box-sizing: border-box;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                background-color: white;
+                margin-top: 5px;
+              "
+              type="text"
+              id="projectName"
+            />
+          </div>
+
+          <div class="date">
+            <div class="sectionDate1">
+              <label for="startdate">START DATE</label>
+              <br />
+              <input
+                style="
+                  box-sizing: border-box;
+                  height: 30px;
+                  border-radius: 10px;
+                  border: none;
+                  background-color: white;
+                  margin-top: 5px;
+                "
+                type="date"
+                id="startDate"
+              />
+            </div>
+            <div class="sectionDate2">
+              <label for="enddate">End Date:</label>
+              <br />
+              <input
+                style="
+                  box-sizing: border-box;
+                  height: 30px;
+                  border-radius: 10px;
+                  border: none;
+                  background-color: white;
+                  margin-top: 5px;
+                "
+                type="date"
+                id="endDate"
+              />
+            </div>
+          </div>
+
+          <div class="section1">
+            <label for="description">DESCRIPTION</label>
+            <br />
+            <input
+              style="
+                width: 100%;
+                margin: auto;
+                box-sizing: border-box;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                background-color: white;
+                margin-top: 5px;
+              "
+              type="text"
+              id="description"
+            />
+          </div>
+
+          <div class="image">
+            <label for="image">IMAGE</label>
+            <br />
+            <input type="file" id="image" />
+            <br />
+          </div>
+          <div class="text-center">
+            <h4>TECHNOLOGIES</h4>
+          </div>
+
+          <div class="checkbox d-flex m-4">
+            <div class="checkbox1 m-3">
+              <input type="checkbox" id="checkbox1" />
+              <label for="checkbox">JAVASCRIPT</label>
+            </div>
+            <div class="checkbox2 m-3">
+              <input type="checkbox" id="checkbox2" />
+              <label for="checkbox">PHP</label>
+            </div>
+
+            <div class="checkbox3 m-3">
+              <input type="checkbox" id="checkbox3" />
+              <label for="checkbox">GOLANG</label>
+            </div>
+            <div class="checkbox4 m-3">
+              <input type="checkbox" id="checkbox4" />
+              <label for="checkbox">PYTHON</label>
+            </div>
+          </div>
+          <div class="section">
+            <div class="button">
+              <button style="background-color: orangered; border-radius: 10px; border: none;" class="submit-button text-light" id="handleInput" type="button">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="container2"></div>
+
+    <script src="blog2.js"></script>
+  </body>
+</html>

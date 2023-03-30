@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="contact.css"> -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+  />
+    <title>contact-form</title>
+</head>
+
+<body style="background-color: aliceblue;">
+
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo.png" alt="" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-danger fw-bold"
+                  aria-current="page"
+                  href="/"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger fw-bold" href="/BLOG/blog.html"
+                  >ADD PROJECT</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a href="/CONTACT/contact.html"
+                style="background-color: orangered; border: none"
+                class="btn btn-outline-success text-light"
+                type="submit"
+              >
+                CONTACT
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar section -->
+
+
+
+
+
+    <div class="container">
+        <!-- bagian title -->
+        <div class="text-center">
+            <h1>GET IN TOUCH</h1>
+        </div>
+        <!-- bagian title -->
+
+
+        <div class="main-content">
+            <form id="main">
+                <div class="section name">
+                    <label for="name">NAME </label>
+                    <br />
+                    <input style="
+                    width: 100%;
+                    margin: auto;
+                    box-sizing: border-box;
+                    height: 30px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: white;
+                    margin-top: 5px;" type="text" id="name" />
+                </div>
+
+                <div class="section email">
+                    <label for="email">EMAIL </label>
+                    <br />
+                    <input style="
+                    width: 100%;
+                    margin: auto;
+                    box-sizing: border-box;
+                    height: 30px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: white;
+                    margin-top: 5px;" type="text" id="email">
+                </div>
+
+                <div class="section phone">
+                    <label  for="phone">PHONE NUMBER </label>
+                    <br />
+                    <input style="
+                    width: 100%;
+                    margin: auto;
+                    box-sizing: border-box;
+                    height: 30px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: white;
+                    margin-top: 5px;" type="text" id="phone">
+                </div>
+
+                <div class="section subject">
+                    <label for="select">SUBJECT</label>
+                    <select style="
+                    width: 100%;
+                    margin: auto;
+                    box-sizing: border-box;
+                    height: 30px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: white;
+                    margin-top: 5px;" id="select">
+                        <option value="FRONTED">FRONTED</option>
+                        <option value="BACKEND">BACKEND</option>
+                        <option value="FULLSTACK">FULLSTACK</option>
+                    </select>
+                </div>
+
+                <div class="section message">
+                    <label for="message">MESSAGE </label>
+                    <br />
+                    <!-- <input type="text" id="message"> -->
+                    <textarea style="resize: none;
+                    height: 200px; border: none;" class="w-100" id="message"></textarea>
+                </div>
+
+                <!-- button section -->
+                <div class="button">
+                    <button  type="button"  style="background-color: orangered; border-radius: 10px; border: none; border: none;" class="submit-button text-light">SUBMIT</button>
+                </div>
+
+                <!-- button section -->
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
